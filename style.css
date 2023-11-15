@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::after, 
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+:root{
+    --fontFamily: 'Poppins', sans-serif;
+    --color: #fff;
+    --secondryColor: #000;
+    --backgroundColor: linear-gradient(135deg, #192a56, #273c75);
+} 
+
+body {
+    background: var(--backgroundColor);
+    color: var(--color);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender {
+    width: 300px;
+    height: 250px;
+    color: var(--secondryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left, .right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left {
+    width: 55%;
+    background-color: var(--color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right {
+    width: 45%;
+    background-color: red;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+p.date {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: -20px;
+}
+
+p.day {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p.month {
+    color: var(--color);
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p.year {
+    color: var(--color);
+    font-size: 21px;
+    font-weight: 400;
+}
